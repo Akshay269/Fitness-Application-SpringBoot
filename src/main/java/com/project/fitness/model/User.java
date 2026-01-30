@@ -35,6 +35,9 @@ public class User {
 
     private String lastName;
 
+    @Enumerated(EnumType.STRING)
+    private UserRole role = UserRole.USER;
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 
